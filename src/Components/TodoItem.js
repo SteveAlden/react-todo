@@ -35,7 +35,7 @@ export class TodoItem extends Component {
                     </ListItemIcon>
                     <ListItemText primary={title}/>
                     <ListItemSecondaryAction>
-                        <IconButton edge="end" aria-label="delete" onClick={this.props.delTodo.bind(this, id)} style={btnStyle} >
+                        <IconButton edge="end" aria-label="delete" onClick={this.props.delTodo.bind(this, id)} >
                             <DeleteIcon />
                         </IconButton>
                     </ListItemSecondaryAction>

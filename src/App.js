@@ -57,15 +57,19 @@ class App extends Component {
   render() {
     //console.log(this.state.todos);
     return (
-      <Container>
+      
+      <div>
         <Header />
-        <AddTodo addTodo={this.addTodo} />
-        <Todos
-          todos={this.state.todos}
-          markComplete={this.markComplete}
-          delTodo={this.delTodo} />
-      </Container>
+        <Container>
+          <AddTodo addTodo={this.addTodo} />
+          <Todos
+            todos={this.state.todos}
+            markComplete={this.markComplete}
+            delTodo={this.delTodo} />
+        </Container>
 
+      </div>
+      
     );
   }
 
