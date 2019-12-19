@@ -5,6 +5,7 @@ import Todos from './Components/Todos';
 import AddTodo from './Components/AddTodo';
 import uuid from 'uuid';
 import Container from '@material-ui/core/Container';
+import Paper from '@material-ui/core/Paper';
 
 class App extends Component {
 
@@ -57,19 +58,24 @@ class App extends Component {
   render() {
     //console.log(this.state.todos);
     return (
-      
+
       <div>
         <Header />
-        <Container>
-          <AddTodo addTodo={this.addTodo} />
-          <Todos
-            todos={this.state.todos}
-            markComplete={this.markComplete}
-            delTodo={this.delTodo} />
-        </Container>
+        {/* <Paper style={{margin: "20px 100px 100px 100px", 
+        padding: "20px",
+        boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}> */}
+          <Container>
+            <AddTodo addTodo={this.addTodo} />
+            <Todos
+              todos={this.state.todos}
+              markComplete={this.markComplete}
+              delTodo={this.delTodo} />
+          </Container>
+        {/* </Paper> */}
+
 
       </div>
-      
+
     );
   }
 

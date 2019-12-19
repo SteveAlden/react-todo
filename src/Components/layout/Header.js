@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
+import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn';
 
 
 const useStyles = makeStyles(theme => ({
@@ -24,6 +25,7 @@ function Header() {
         <div className={classes.root}>
             <AppBar position="static" color='secondary'>
             <Toolbar className={classes.toolbar}>
+              <AssignmentTurnedInIcon />
                 <Typography variant="h6" className={classes.title}>
                     Todo List
                 </Typography>
