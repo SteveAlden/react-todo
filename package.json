@@ -1,5 +1,4 @@
 {
-  "homepage": "https://SteveAlden.github.io/ReactTodo",
   "name": "react-tod-list",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +13,7 @@
     "react-scripts": "3.3.0",
     "uuid": "^3.3.3"
   },
+  "homepage": "https://SteveAlden.github.io/ReactTodo/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
