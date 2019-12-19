@@ -22,7 +22,7 @@ function Header() {
 
     return (
         <div className={classes.root}>
-            <AppBar position="static">
+            <AppBar position="static" color='secondary'>
             <Toolbar className={classes.toolbar}>
                 <Typography variant="h6" className={classes.title}>
                     Todo List
