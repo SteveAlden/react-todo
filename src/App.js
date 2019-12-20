@@ -61,17 +61,21 @@ class App extends Component {
 
       <div>
         <Header />
-        {/* <Paper style={{margin: "20px 100px 100px 100px", 
-        padding: "20px",
-        boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}> */}
-          <Container>
+
+        <Container maxWidth="smx">
+          <Paper style={{
+            margin: "20px 2px 20px 2px",
+            padding: "20px",
+            boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
+          }}>
             <AddTodo addTodo={this.addTodo} />
             <Todos
               todos={this.state.todos}
               markComplete={this.markComplete}
               delTodo={this.delTodo} />
-          </Container>
-        {/* </Paper> */}
+          </Paper>
+        </Container>
+
 
 
       </div>
