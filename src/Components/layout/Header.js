@@ -26,15 +26,12 @@ function Header() {
 
   return (
     <div className={classes.root}>
-      {/* <AppBar position="static" className={classes.appbar}> */}
       <AppBar
         position='static'
         className={classes.appbar}
         style={{
-          // backgroundColor: '#303030',
           backgroundColor: 'rgb(25,25,25)',
           color: 'rgba(132.0, 201.0, 251.0, 1.0)'
-          // boxShadow: '0px 15px 29px #bfc3ca'
         }}
       >
         <Toolbar className={classes.toolbar}>

@@ -68,16 +68,12 @@ class App extends Component {
     return (
       <div>
         <Header />
-
         <Container>
           <Paper
             style={{
               margin: '50px 2px 20px 2px',
-              // backgroundColor: '#272727',
               backgroundColor: '#E1E5EE',
               padding: '20px 10px 20px 10px',
-              // boxShadow:
-              //   '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'
               boxShadow: ' 14px 14px 29px #bfc3ca, -14px -14px 29px #ffffff',
               borderRadius: '7px'
             }}
