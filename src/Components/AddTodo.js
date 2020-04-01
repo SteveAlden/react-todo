@@ -16,34 +16,40 @@ export class AddTodo extends Component {
   };
   render() {
     return (
-      <form
-        onSubmit={this.onSubmit}
+      <div
         style={{
-          display: 'flex',
-          background: '#E1E5EE;',
-          boxShadow: '6px 6px 11px #bfc3ca, -6px -6px 11px #ffffff',
           margin: '8px 5px 20px 5px',
+          padding: '7px',
+          boxShadow: '6px 6px 11px #bfc3ca, -6px -6px 11px #ffffff',
           borderRadius: '7px'
         }}
       >
-        <TextField
+        <form
+          onSubmit={this.onSubmit}
           style={{
-            margin: '7px',
-            paddingTop: '10px',
-            boxSizing: 'inherit',
-            borderRadius: '7px 7px 0px 0px',
-            boxShadow: 'inset 4px 4px 8px #bfc3ca, inset -4px -4px 8px #ffffff'
+            display: 'flex',
+            background: '#E1E5EE;',
+            boxShadow: 'inset 4px 4px 8px #bfc3ca, inset -4px -4px 8px #ffffff',
+            borderRadius: '7px'
           }}
-          id='standard-full-width'
-          color='secondary'
-          label=' What do you want to do...?'
-          fullWidth
-          autoComplete='off'
-          required
-          value={this.state.title}
-          onChange={this.onChange}
-        />
-      </form>
+        >
+          <TextField
+            style={{
+              margin: '7px 7px 0px 7px',
+              paddingTop: '10px',
+              boxSizing: 'inherit'
+            }}
+            id='standard-full-width'
+            color='secondary'
+            label=' What do you want to do...?'
+            fullWidth
+            autoComplete='off'
+            required
+            value={this.state.title}
+            onChange={this.onChange}
+          />
+        </form>
+      </div>
     );
   }
 }
